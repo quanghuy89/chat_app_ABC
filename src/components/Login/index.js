@@ -30,21 +30,21 @@ export default function Login() {
     <div>
       <Row justify='center' style={{ height: 800 }}>
         <Col span={8}>
-          <Title style={{ textAlign: 'center' }} level={3}>
-            Fun Chat
+          <Title style={{ textAlign: 'center', marginTop:30 }} level={2}>
+            Group04 Chat App
           </Title>
           <Button
-            style={{ width: '100%', marginBottom: 5 }}
+            style={{ width: '100%', marginTop: 20 }}
             onClick={() => handleLogin(googleProvider)}
           >
             Đăng nhập bằng Google
           </Button>
-          <Button
+          {/* <Button
             style={{ width: '100%' }}
             onClick={() => handleLogin(fbProvider)}
           >
             Đăng nhập bằng Facebook
-          </Button>
+          </Button> */}
         </Col>
       </Row>
     </div>

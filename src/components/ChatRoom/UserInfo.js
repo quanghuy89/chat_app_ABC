@@ -13,8 +13,10 @@ const WrapperStyled = styled.div`
   border-bottom: 1px solid rgba(82, 38, 83);
 
   .username {
-    color: white;
-    margin-left: 5px;
+    color: #fff;
+    font-size:18px;
+    margin-left: 10px;
+    padding:10px 0px;
   }
 `;
 

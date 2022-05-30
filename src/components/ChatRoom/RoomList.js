@@ -10,7 +10,8 @@ const PanelStyled = styled(Panel)`
   &&& {
     .ant-collapse-header,
     p {
-      color: white;
+      color:white;
+      font-size:20px;
     }
 
     .ant-collapse-content-box {
@@ -18,7 +19,8 @@ const PanelStyled = styled(Panel)`
     }
 
     .add-room {
-      color: white;
+      color:white;
+      font-size:20px;
       padding: 0;
     }
   }
@@ -27,7 +29,8 @@ const PanelStyled = styled(Panel)`
 const LinkStyled = styled(Typography.Link)`
   display: block;
   margin-bottom: 5px;
-  color: white;
+  color:white;
+  font-size:20px;
 `;
 
 export default function RoomList() {
