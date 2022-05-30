@@ -4,10 +4,15 @@ import styled from 'styled-components';
 import { formatRelative } from 'date-fns/esm';
 
 const WrapperStyled = styled.div`
-  margin-bottom: 10px;
+  margin-bottom: 15px;
+
+  .author-message{
+    margin:10px 0;
+  }
 
   .author {
-    margin-left: 5px;
+    margin-left: 10px;
+    margin-bottom: 10px;
     font-weight: bold;
   }
 
@@ -18,7 +23,13 @@ const WrapperStyled = styled.div`
   }
 
   .content {
-    margin-left: 30px;
+    margin-left: 32px;
+    margin-top:20px;
+    background:lightblue;
+    border-radius:10px;
+    min-height:px;
+    font-size: 15px;
+    padding:10px;
   }
 `;
 
@@ -38,7 +49,7 @@ function formatDate(seconds) {
 export default function Message({ text, displayName, createdAt, photoURL }) {
   return (
     <WrapperStyled>
-      <div>
+      <div class="author-message">
         <Avatar size='small' src={photoURL}>
           {photoURL ? '' : displayName?.charAt(0)?.toUpperCase()}
         </Avatar>

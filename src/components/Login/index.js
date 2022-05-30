@@ -1,5 +1,5 @@
 import React from 'react';
-import { Row, Col, Button, Typography } from 'antd';
+import { Row, Col, Button, Typography ,Image} from 'antd';
 import firebase, { auth } from '../../firebase/config';
 import { addDocument, generateKeywords } from '../../firebase/services';
 
@@ -30,6 +30,9 @@ export default function Login() {
     <div>
       <Row justify='center' style={{ height: 800 }}>
         <Col span={8}>
+          <Image style={{ width : 300,textAlign:'center',marginLeft:100 }} 
+          src={"logo.png"} 
+          />
           <Title style={{ textAlign: 'center', marginTop:30 }} level={2}>
             Group04 Chat App
           </Title>

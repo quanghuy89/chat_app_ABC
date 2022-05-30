@@ -16,6 +16,8 @@ const HeaderStyled = styled.div`
   align-items: center;
   border-bottom: 1px solid rgb(230, 230, 230);
 
+  background-color: #37E2D5;
+
   .header {
     &__info {
       display: flex;
@@ -55,13 +57,19 @@ const FormStyled = styled(Form)`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 2px 2px 2px 0;
-  border: 1px solid rgb(230, 230, 230);
-  border-radius: 2px;
+  padding: 2px 2px 2px 2px;
+  border: 2px solid black;
+  border-radius: 10px;
 
   .ant-form-item {
     flex: 1;
     margin-bottom: 0;
+  }
+
+  .btn-submit {
+    background:lightblue;
+    color:black;
+    border-radius:10px;
   }
 `;
 
@@ -83,6 +91,7 @@ export default function ChatWindow() {
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
+    
   };
 
   const handleOnSubmit = () => {
@@ -140,7 +149,7 @@ export default function ChatWindow() {
                 type='text'
                 onClick={() => setIsInviteMemberVisible(true)}
               >
-                Mời
+                Invite
               </Button>
               <Avatar.Group size='small' maxCount={2}>
                 {members.map((member) => (
@@ -173,13 +182,14 @@ export default function ChatWindow() {
                   ref={inputRef}
                   onChange={handleInputChange}
                   onPressEnter={handleOnSubmit}
-                  placeholder='Nhập tin nhắn...'
+                  placeholder='Enter message...'
                   bordered={false}
                   autoComplete='off'
                 />
               </Form.Item>
-              <Button type='primary' onClick={handleOnSubmit}>
-                Gửi
+              <Button class="btn-submit" type='primary' onClick={handleOnSubmit}
+              style={{color:'black',width:100,borderRadius:10,margin:5}}>
+                Send
               </Button>
             </FormStyled>
           </ContentStyled>
@@ -189,7 +199,7 @@ export default function ChatWindow() {
           message='Hãy chọn phòng'
           type='info'
           showIcon
-          style={{ margin: 5 }}
+          style={{ margin: 10 }}
           closable
         />
       )}
