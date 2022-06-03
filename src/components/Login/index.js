@@ -4,7 +4,6 @@ import firebase, { auth } from '../../firebase/config';
 import { addDocument, generateKeywords } from '../../firebase/services';
 
 const { Title } = Typography;
-
 const fbProvider = new firebase.auth.FacebookAuthProvider();
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 
@@ -36,8 +35,8 @@ export default function Login() {
           <Title style={{ textAlign: 'center', marginTop:30 }} level={2}>
             Group04 Chat App
           </Title>
-          <Button
-            style={{ width: '100%', marginTop: 20 }}
+          <Button className="btn-login"
+            style={{ width: '100%',height:50, marginTop: 20,background:"lightblue",borderRadius:10,fontSize:20,fontWeight:10 }}
             onClick={() => handleLogin(googleProvider)}
           >
             Đăng nhập bằng Google

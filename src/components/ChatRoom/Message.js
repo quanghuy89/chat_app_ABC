@@ -6,8 +6,8 @@ import { formatRelative } from 'date-fns/esm';
 const WrapperStyled = styled.div`
   margin-bottom: 15px;
 
-  .author-message{
-    margin:10px 0;
+  .author-message {
+    margin: 10px 0;
   }
 
   .author {
@@ -24,12 +24,12 @@ const WrapperStyled = styled.div`
 
   .content {
     margin-left: 32px;
-    margin-top:20px;
-    background:lightblue;
-    border-radius:10px;
-    min-height:px;
+    margin-top: 20px;
+    background: lightblue;
+    border-radius: 10px;
+    min-height: px;
     font-size: 15px;
-    padding:10px;
+    padding: 10px;
   }
 `;
 
@@ -39,8 +39,7 @@ function formatDate(seconds) {
   if (seconds) {
     formattedDate = formatRelative(new Date(seconds * 1000), new Date());
 
-    formattedDate =
-      formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
+    formattedDate = formattedDate.charAt(0).toUpperCase() + formattedDate.slice(1);
   }
 
   return formattedDate;
@@ -49,18 +48,17 @@ function formatDate(seconds) {
 export default function Message({ text, displayName, createdAt, photoURL }) {
   return (
     <WrapperStyled>
-      <div class="author-message">
+      <div class='author-message'>
         <Avatar size='small' src={photoURL}>
           {photoURL ? '' : displayName?.charAt(0)?.toUpperCase()}
         </Avatar>
         <Typography.Text className='author'>{displayName}</Typography.Text>
-        <Typography.Text className='date'>
-          {formatDate(createdAt?.seconds)}
-        </Typography.Text>
+        <Typography.Text className='date'>{formatDate(createdAt?.seconds)}</Typography.Text>
       </div>
       <div>
         <Typography.Text className='content'>{text}</Typography.Text>
       </div>
     </WrapperStyled>
+    
   );
 }
