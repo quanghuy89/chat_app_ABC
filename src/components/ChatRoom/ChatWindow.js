@@ -16,7 +16,7 @@ const HeaderStyled = styled.div`
   align-items: center;
   border-bottom: 1px solid rgb(230, 230, 230);
 
-  background-color: #37E2D5;
+  background-color: #37e2d5;
 
   .header {
     &__info {
@@ -67,9 +67,9 @@ const FormStyled = styled(Form)`
   }
 
   .btn-submit {
-    background:lightblue;
-    color:black;
-    border-radius:10px;
+    background: lightblue;
+    color: black;
+    border-radius: 10px;
   }
 `;
 
@@ -79,8 +79,7 @@ const MessageListStyled = styled.div`
 `;
 
 export default function ChatWindow() {
-  const { selectedRoom, members, setIsInviteMemberVisible } =
-    useContext(AppContext);
+  const { selectedRoom, members, setIsInviteMemberVisible } = useContext(AppContext);
   const {
     user: { uid, photoURL, displayName },
   } = useContext(AuthContext);
@@ -91,7 +90,6 @@ export default function ChatWindow() {
 
   const handleInputChange = (e) => {
     setInputValue(e.target.value);
-    
   };
 
   const handleOnSubmit = () => {
@@ -127,8 +125,7 @@ export default function ChatWindow() {
   useEffect(() => {
     // scroll to bottom after message changed
     if (messageListRef?.current) {
-      messageListRef.current.scrollTop =
-        messageListRef.current.scrollHeight + 50;
+      messageListRef.current.scrollTop = messageListRef.current.scrollHeight + 50;
     }
   }, [messages]);
 
@@ -139,25 +136,20 @@ export default function ChatWindow() {
           <HeaderStyled>
             <div className='header__info'>
               <p className='header__title'>{selectedRoom.name}</p>
-              <span className='header__description'>
-                {selectedRoom.description}
-              </span>
+              <span className='header__description'>{selectedRoom.description}</span>
             </div>
             <ButtonGroupStyled>
               <Button
                 icon={<UserAddOutlined />}
                 type='text'
-                onClick={() => setIsInviteMemberVisible(true)}
-              >
+                onClick={() => setIsInviteMemberVisible(true)}>
                 Invite
               </Button>
               <Avatar.Group size='small' maxCount={2}>
                 {members.map((member) => (
                   <Tooltip title={member.displayName} key={member.id}>
                     <Avatar src={member.photoURL}>
-                      {member.photoURL
-                        ? ''
-                        : member.displayName?.charAt(0)?.toUpperCase()}
+                      {member.photoURL ? '' : member.displayName?.charAt(0)?.toUpperCase()}
                     </Avatar>
                   </Tooltip>
                 ))}
@@ -165,7 +157,9 @@ export default function ChatWindow() {
             </ButtonGroupStyled>
           </HeaderStyled>
           <ContentStyled>
-            <MessageListStyled ref={messageListRef}>
+            <MessageListStyled 
+            style={{paddingBottom:10}}
+            ref={messageListRef}>
               {messages.map((mes) => (
                 <Message
                   key={mes.id}
@@ -187,21 +181,18 @@ export default function ChatWindow() {
                   autoComplete='off'
                 />
               </Form.Item>
-              <Button class="btn-submit" type='primary' onClick={handleOnSubmit}
-              style={{color:'black',width:100,borderRadius:10,margin:5}}>
+              <Button
+                class='btn-submit'
+                type='primary'
+                onClick={handleOnSubmit}
+                style={{ color: 'black', width: 100, borderRadius: 10, margin: 5 }}>
                 Send
               </Button>
             </FormStyled>
           </ContentStyled>
         </>
       ) : (
-        <Alert
-          message='Hãy chọn phòng'
-          type='info'
-          showIcon
-          style={{ margin: 10 }}
-          closable
-        />
+        <Alert message='Hãy chọn phòng' type='info' showIcon style={{ margin: 10 }} closable />
       )}
     </WrapperStyled>
   );
