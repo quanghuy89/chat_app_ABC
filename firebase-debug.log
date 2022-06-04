@@ -1,100 +1,29 @@
-[debug] [2022-06-03T14:07:04.678Z] ----------------------------------------------------------------------
-[debug] [2022-06-03T14:07:04.680Z] Command:       D:\nodejs\node.exe C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
-[debug] [2022-06-03T14:07:04.680Z] CLI Version:   11.0.0
-[debug] [2022-06-03T14:07:04.680Z] Platform:      win32
-[debug] [2022-06-03T14:07:04.680Z] Node Version:  v16.15.0
-[debug] [2022-06-03T14:07:04.686Z] Time:          Fri Jun 03 2022 21:07:04 GMT+0700 (GMT+07:00)
-[debug] [2022-06-03T14:07:04.687Z] ----------------------------------------------------------------------
+[debug] [2022-06-04T13:50:47.613Z] ----------------------------------------------------------------------
+[debug] [2022-06-04T13:50:47.615Z] Command:       D:\nodejs\node.exe C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-06-04T13:50:47.615Z] CLI Version:   11.0.0
+[debug] [2022-06-04T13:50:47.615Z] Platform:      win32
+[debug] [2022-06-04T13:50:47.615Z] Node Version:  v16.15.0
+[debug] [2022-06-04T13:50:47.616Z] Time:          Sat Jun 04 2022 20:50:47 GMT+0700 (GMT+07:00)
+[debug] [2022-06-04T13:50:47.616Z] ----------------------------------------------------------------------
 [debug] 
-[debug] [2022-06-03T14:07:04.801Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
-[debug] [2022-06-03T14:07:04.802Z] > authorizing via signed-in user (19h1010020@sv.ut.edu.vn)
-[debug] [2022-06-03T14:07:05.255Z] java version "17.0.2" 2022-01-18 LTS
+[debug] [2022-06-04T13:50:47.669Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-04T13:50:47.669Z] > authorizing via signed-in user (19h1010020@sv.ut.edu.vn)
+[debug] [2022-06-04T13:50:47.760Z] java version "17.0.2" 2022-01-18 LTS
 Java(TM) SE Runtime Environment (build 17.0.2+8-LTS-86)
 
-[debug] [2022-06-03T14:07:05.256Z] Java HotSpot(TM) 64-Bit Server VM (build 17.0.2+8-LTS-86, mixed mode, sharing)
+[debug] [2022-06-04T13:50:47.760Z] Java HotSpot(TM) 64-Bit Server VM (build 17.0.2+8-LTS-86, mixed mode, sharing)
 
-[debug] [2022-06-03T14:07:05.270Z] Parsed Java major version: 17
+[debug] [2022-06-04T13:50:47.786Z] Parsed Java major version: 17
 [info] i  emulators: Starting emulators: auth, functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore"}}
-[warn] !  emulators: It seems that you are running multiple instances of the emulator suite for project group04-chat-app-407a4. This may result in unexpected behavior. 
-[debug] [2022-06-03T14:07:05.303Z] [hub] writing locator at C:\Users\HOME\AppData\Local\Temp\hub-group04-chat-app-407a4.json
+[debug] [2022-06-04T13:50:47.816Z] [hub] writing locator at C:\Users\HOME\AppData\Local\Temp\hub-group04-chat-app-407a4.json
 [warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub, storage\u001b[22m"}}
 [info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
-[debug] [2022-06-03T14:07:05.369Z] defaultcredentials: writing to file C:\Users\HOME\AppData\Roaming\firebase\19h1010020_sv_ut.edu.vn_application_default_credentials.json
-[debug] [2022-06-03T14:07:05.371Z] Setting GAC to C:\Users\HOME\AppData\Roaming\firebase\19h1010020_sv_ut.edu.vn_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HOME\\AppData\\Roaming\\firebase\\19h1010020_sv_ut.edu.vn_application_default_credentials.json"}}
-[debug] [2022-06-03T14:07:05.375Z] > refreshing access token with scopes: []
-[debug] [2022-06-03T14:07:05.376Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
- <request body omitted>
-[debug] [2022-06-03T14:07:05.599Z] <<< HTTP RESPONSE 200 {"date":"Fri, 03 Jun 2022 14:07:06 GMT","expires":"Mon, 01 Jan 1990 00:00:00 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
-[debug] [2022-06-03T14:07:05.616Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig [none]
-[debug] [2022-06-03T14:07:06.213Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig 200
-[debug] [2022-06-03T14:07:06.213Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig {"projectId":"group04-chat-app-407a4","storageBucket":"group04-chat-app-407a4.appspot.com","locationId":"asia-southeast1"}
-[debug] [2022-06-03T14:07:06.238Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
-[debug] [2022-06-03T14:07:06.239Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-06-03T14:07:06.239Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\HOME\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--rules","E:\\ITStudy\\projectManagement\\bigproject\\Group04-ProjectChatApp\\Group04-SourceCode\\chat_app_ABC\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\HOME\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"E:\\\\ITStudy\\\\projectManagement\\\\bigproject\\\\Group04-ProjectChatApp\\\\Group04-SourceCode\\\\chat_app_ABC\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[debug] [2022-06-04T13:50:47.856Z] defaultcredentials: writing to file C:\Users\HOME\AppData\Roaming\firebase\19h1010020_sv_ut.edu.vn_application_default_credentials.json
+[debug] [2022-06-04T13:50:47.858Z] Setting GAC to C:\Users\HOME\AppData\Roaming\firebase\19h1010020_sv_ut.edu.vn_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HOME\\AppData\\Roaming\\firebase\\19h1010020_sv_ut.edu.vn_application_default_credentials.json"}}
+[debug] [2022-06-04T13:50:47.860Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig [none]
+[debug] [2022-06-04T13:50:48.297Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig 200
+[debug] [2022-06-04T13:50:48.298Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig {"projectId":"group04-chat-app-407a4","storageBucket":"group04-chat-app-407a4.appspot.com","locationId":"asia-southeast1"}
+[debug] [2022-06-04T13:50:48.320Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-06-04T13:50:48.320Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-04T13:50:48.320Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\HOME\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--rules","E:\\ITStudy\\projectManagement\\bigproject\\Group04-ProjectChatApp\\Group04-SourceCode\\chat_app_ABC\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\HOME\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"E:\\\\ITStudy\\\\projectManagement\\\\bigproject\\\\Group04-ProjectChatApp\\\\Group04-SourceCode\\\\chat_app_ABC\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
 [info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
-[debug] [2022-06-03T14:07:16.127Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
-[debug] [2022-06-03T14:07:16.127Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
-[debug] [2022-06-03T14:07:16.128Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\HOME\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\HOME\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
-[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
-[debug] [2022-06-03T14:07:16.375Z] Web / API server started at localhost:4000
- {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
-[info] i  functions: Watching "E:\ITStudy\projectManagement\bigproject\Group04-ProjectChatApp\Group04-SourceCode\chat_app_ABC\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\ITStudy\\projectManagement\\bigproject\\Group04-ProjectChatApp\\Group04-SourceCode\\chat_app_ABC\\functions\" for Cloud Functions..."}}
-[debug] [2022-06-03T14:07:16.421Z] Validating nodejs source
-[debug] [2022-06-03T14:07:20.475Z] > [functions] package.json contents: {
-  "name": "functions",
-  "description": "Cloud Functions for Firebase",
-  "scripts": {
-    "serve": "firebase emulators:start --only functions",
-    "shell": "firebase functions:shell",
-    "start": "npm run shell",
-    "deploy": "firebase deploy --only functions",
-    "logs": "firebase functions:log"
-  },
-  "engines": {
-    "node": "16"
-  },
-  "main": "index.js",
-  "dependencies": {
-    "firebase-admin": "^10.0.2",
-    "firebase-functions": "^3.18.0"
-  },
-  "devDependencies": {
-    "firebase-functions-test": "^0.2.0"
-  },
-  "private": true
-}
-[debug] [2022-06-03T14:07:20.475Z] Building nodejs source
-[debug] [2022-06-03T14:07:20.475Z] Analyzing nodejs backend spec
-[debug] [2022-06-03T14:07:20.476Z] Could not find functions.yaml. Must use http discovery
-[debug] [2022-06-03T14:07:22.835Z] Serving at port 9005
-
-[debug] [2022-06-03T14:07:24.137Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
-[debug] [2022-06-03T14:07:24.144Z] shutdown requested via /__/quitquitquit
-
-[info] 
-┌─────────────────────────────────────────────────────────────┐
-│ ✔  All emulators ready! It is now safe to connect your app. │
-│ i  View Emulator UI at http://localhost:4000                │
-└─────────────────────────────────────────────────────────────┘
-
-┌────────────────┬────────────────┬─────────────────────────────────┐
-│ Emulator       │ Host:Port      │ View in Emulator UI             │
-├────────────────┼────────────────┼─────────────────────────────────┤
-│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
-├────────────────┼────────────────┼─────────────────────────────────┤
-│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
-├────────────────┼────────────────┼─────────────────────────────────┤
-│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
-└────────────────┴────────────────┴─────────────────────────────────┘
-  Emulator Hub running at localhost:4400
-  Other reserved ports: 4500
-
-Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
- 
-[warn] !  Error: Internal state invariant broken: no user with ID: PrhlHDnClMfSHlos9N1fvlhLEeOX
-    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:208:19)
-    at AgentProjectState.validateRefreshToken (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:295:24)
-    at grantToken (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1212:38)
-    at Proxy.<anonymous> (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
-    at C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
-    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: PrhlHDnClMfSHlos9N1fvlhLEeOX\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:208:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:295:24)\n    at grantToken (C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1212:38)\n    at Proxy.<anonymous> (C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}

@@ -4,7 +4,6 @@ import firebase, { auth } from "../../firebase/config";
 import { addDocument, generateKeywords } from "../../firebase/services";
 
 const { Title } = Typography;
-<<<<<<< HEAD
 
 const googleProvider = new firebase.auth.GoogleAuthProvider();
 
@@ -24,7 +23,6 @@ export default function Login() {
 		}
 	};
 
-<<<<<<< HEAD
 	return (
 		<div>
 			<Row justify="center" style={{ height: 800 }}>
@@ -55,32 +53,4 @@ export default function Login() {
 			</Row>
 		</div>
 	);
-=======
-  return (
-    <div>
-      <Row justify='center' style={{ height: 800 }}>
-        <Col span={8}>
-          <Image style={{ width : 300,textAlign:'center',marginLeft:100 }} 
-          src={"logo.png"} 
-          />
-          <Title style={{ textAlign: 'center', marginTop:30 }} level={2}>
-            Group04 Chat App
-          </Title>
-          <Button className="btn-login"
-            style={{ width: '100%',height:50, marginTop: 20,background:"lightblue",borderRadius:10,fontSize:20,fontWeight:10 }}
-            onClick={() => handleLogin(googleProvider)}
-          >
-            Đăng nhập bằng Google
-          </Button>
-          {/* <Button
-            style={{ width: '100%' }}
-            onClick={() => handleLogin(fbProvider)}
-          >
-            Đăng nhập bằng Facebook
-          </Button> */}
-        </Col>
-      </Row>
-    </div>
-  );
->>>>>>> main
 }
