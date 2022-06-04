@@ -197,3 +197,46 @@ Issues? Report them at https://github.com/firebase/firebase-tools/issues and att
 [debug] [2022-05-30T14:02:39.089Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"eventId":"7f073ee0-9baa-4b80-b2a8-66a6482bea3e","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/group04-chat-app-407a4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-05-30T14:02:39.089Z","data":{"uid":"7tiNFPxIh8JX6n1cMhe2TwfYj8My","email":"algae.mountain.972@example.com","emailVerified":true,"displayName":"Algae Mountain","metadata":{"creationTime":"2022-05-30T14:02:39.088Z","lastSignInTime":"2022-05-30T14:02:39.088Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"1724952975683634068547432117153817925433","federatedId":"1724952975683634068547432117153817925433","displayName":"Algae Mountain","email":"algae.mountain.972@example.com","screenName":"mountain_algae"}]}}
 [debug] [2022-05-30T14:02:39.092Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast 200
 [debug] [2022-05-30T14:02:39.092Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-06-04T05:43:18.479Z] ----------------------------------------------------------------------
+[debug] [2022-06-04T05:43:18.483Z] Command:       D:\nodejs\node.exe C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-06-04T05:43:18.484Z] CLI Version:   11.0.0
+[debug] [2022-06-04T05:43:18.484Z] Platform:      win32
+[debug] [2022-06-04T05:43:18.484Z] Node Version:  v16.15.0
+[debug] [2022-06-04T05:43:18.486Z] Time:          Sat Jun 04 2022 12:43:18 GMT+0700 (GMT+07:00)
+[debug] [2022-06-04T05:43:18.486Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-04T05:43:18.579Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-04T05:43:18.579Z] > authorizing via signed-in user (19h1010020@sv.ut.edu.vn)
+[debug] [2022-06-04T05:43:18.699Z] java version "17.0.2" 2022-01-18 LTS
+Java(TM) SE Runtime Environment (build 17.0.2+8-LTS-86)
+Java HotSpot(TM) 64-Bit Server VM (build 17.0.2+8-LTS-86, mixed mode, sharing)
+
+[debug] [2022-06-04T05:43:18.713Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: auth, functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore"}}
+[debug] [2022-06-04T05:43:18.745Z] [hub] writing locator at C:\Users\HOME\AppData\Local\Temp\hub-group04-chat-app-407a4.json
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub, storage\u001b[22m"}}
+[info] i  emulators: Shutting down emulators. {"metadata":{"emulator":{"name":"hub"},"message":"Shutting down emulators."}}
+[info] i  functions: Stopping Functions Emulator {"metadata":{"emulator":{"name":"functions"},"message":"Stopping Functions Emulator"}}
+[info] i  hub: Stopping emulator hub {"metadata":{"emulator":{"name":"hub"},"message":"Stopping emulator hub"}}
+[debug] [2022-06-04T05:43:20.444Z] Error: Cannot find module 'E:\ITStudy\projectManagement\bigproject\Group04-ProjectChatApp\Group04-SourceCode\chat_app_ABC\functions\package.json'
+Require stack:
+- C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js
+- C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js
+- C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\commandUtils.js
+- C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\database-get.js
+- C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\index.js
+- C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\index.js
+- C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js
+    at Function.Module._resolveFilename (node:internal/modules/cjs/loader:933:15)
+    at Function.Module._load (node:internal/modules/cjs/loader:778:27)
+    at Module.require (node:internal/modules/cjs/loader:1005:19)
+    at require (node:internal/modules/cjs/helpers:102:18)
+    at FunctionsEmulator.getNodeBinary (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:594:21)
+    at FunctionsEmulator.start (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\functionsEmulator.js:202:39)
+    at Function.start (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\registry.js:16:24)
+    at startEmulator (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:100:39)
+    at Object.startAll (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\controller.js:334:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Command.actionFn (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\commands\emulators-start.js:28:35)
+[error] 
+[error] Error: An unexpected error has occurred.
