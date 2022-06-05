@@ -1,0 +1,119 @@
+[debug] [2022-06-05T14:45:00.675Z] ----------------------------------------------------------------------
+[debug] [2022-06-05T14:45:00.677Z] Command:       D:\nodejs\node.exe C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js emulators:start
+[debug] [2022-06-05T14:45:00.678Z] CLI Version:   11.0.0
+[debug] [2022-06-05T14:45:00.678Z] Platform:      win32
+[debug] [2022-06-05T14:45:00.678Z] Node Version:  v16.15.0
+[debug] [2022-06-05T14:45:00.685Z] Time:          Sun Jun 05 2022 21:45:00 GMT+0700 (GMT+07:00)
+[debug] [2022-06-05T14:45:00.685Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-06-05T14:45:00.698Z] >>> [apiv2][query] GET https://firebase-public.firebaseio.com/cli.json [none]
+[debug] [2022-06-05T14:45:08.087Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-06-05T14:45:08.087Z] > authorizing via signed-in user (19h1010020@sv.ut.edu.vn)
+[debug] [2022-06-05T14:45:08.592Z] java version "17.0.2" 2022-01-18 LTS
+Java(TM) SE Runtime Environment (build 17.0.2+8-LTS-86)
+
+[debug] [2022-06-05T14:45:08.593Z] Java HotSpot(TM) 64-Bit Server VM (build 17.0.2+8-LTS-86, mixed mode, sharing)
+
+[debug] [2022-06-05T14:45:08.615Z] Parsed Java major version: 17
+[info] i  emulators: Starting emulators: auth, functions, firestore {"metadata":{"emulator":{"name":"hub"},"message":"Starting emulators: auth, functions, firestore"}}
+[debug] [2022-06-05T14:45:08.633Z] [hub] writing locator at C:\Users\HOME\AppData\Local\Temp\hub-group04-chat-app-407a4.json
+[debug] [2022-06-05T14:45:08.856Z] <<< [apiv2][status] GET https://firebase-public.firebaseio.com/cli.json 200
+[debug] [2022-06-05T14:45:08.856Z] <<< [apiv2][body] GET https://firebase-public.firebaseio.com/cli.json {"cloudBuildErrorAfter":1594252800000,"cloudBuildWarnAfter":1590019200000,"defaultNode10After":1594252800000,"minVersion":"3.0.5","node8DeploysDisabledAfter":1613390400000,"node8RuntimeDisabledAfter":1615809600000,"node8WarnAfter":1600128000000}
+[warn] !  functions: The following emulators are not running, calls to these services from the Functions emulator will affect production: database, hosting, pubsub, storage {"metadata":{"emulator":{"name":"functions"},"message":"The following emulators are not running, calls to these services from the Functions emulator will affect production: \u001b[1mdatabase, hosting, pubsub, storage\u001b[22m"}}
+[info] +  functions: Using node@16 from host. {"metadata":{"emulator":{"name":"functions"},"message":"Using node@16 from host."}}
+[debug] [2022-06-05T14:45:08.970Z] defaultcredentials: writing to file C:\Users\HOME\AppData\Roaming\firebase\19h1010020_sv_ut.edu.vn_application_default_credentials.json
+[debug] [2022-06-05T14:45:08.972Z] Setting GAC to C:\Users\HOME\AppData\Roaming\firebase\19h1010020_sv_ut.edu.vn_application_default_credentials.json {"metadata":{"emulator":{"name":"functions"},"message":"Setting GAC to C:\\Users\\HOME\\AppData\\Roaming\\firebase\\19h1010020_sv_ut.edu.vn_application_default_credentials.json"}}
+[debug] [2022-06-05T14:45:08.973Z] > refreshing access token with scopes: []
+[debug] [2022-06-05T14:45:08.974Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2022-06-05T14:45:09.233Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","date":"Sun, 05 Jun 2022 14:45:11 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3=\":443\"; ma=2592000,h3-29=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2022-06-05T14:45:09.268Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig [none]
+[debug] [2022-06-05T14:45:09.981Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig 200
+[debug] [2022-06-05T14:45:09.981Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/group04-chat-app-407a4/adminSdkConfig {"projectId":"group04-chat-app-407a4","storageBucket":"group04-chat-app-407a4.appspot.com","locationId":"asia-southeast1"}
+[debug] [2022-06-05T14:45:10.008Z] Ignoring unsupported arg: projectId {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: projectId"}}
+[debug] [2022-06-05T14:45:10.008Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"firestore"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-05T14:45:10.009Z] Starting Firestore Emulator with command {"binary":"java","args":["-Dgoogle.cloud_firestore.debug_log_level=FINE","-Duser.language=en","-jar","C:\\Users\\HOME\\.cache\\firebase\\emulators\\cloud-firestore-emulator-v1.14.3.jar","--host","localhost","--port",8080,"--rules","E:\\ITStudy\\projectManagement\\bigproject\\Group04-ProjectChatApp\\Group04-SourceCode\\chat_app_ABC\\firestore.rules","--functions_emulator","localhost:5001"],"optionalArgs":["port","webchannel_port","host","rules","functions_emulator","seed_from_export"],"joinArgs":false} {"metadata":{"emulator":{"name":"firestore"},"message":"Starting Firestore Emulator with command {\"binary\":\"java\",\"args\":[\"-Dgoogle.cloud_firestore.debug_log_level=FINE\",\"-Duser.language=en\",\"-jar\",\"C:\\\\Users\\\\HOME\\\\.cache\\\\firebase\\\\emulators\\\\cloud-firestore-emulator-v1.14.3.jar\",\"--host\",\"localhost\",\"--port\",8080,\"--rules\",\"E:\\\\ITStudy\\\\projectManagement\\\\bigproject\\\\Group04-ProjectChatApp\\\\Group04-SourceCode\\\\chat_app_ABC\\\\firestore.rules\",\"--functions_emulator\",\"localhost:5001\"],\"optionalArgs\":[\"port\",\"webchannel_port\",\"host\",\"rules\",\"functions_emulator\",\"seed_from_export\"],\"joinArgs\":false}"}}
+[info] i  firestore: Firestore Emulator logging to firestore-debug.log {"metadata":{"emulator":{"name":"firestore"},"message":"Firestore Emulator logging to \u001b[1mfirestore-debug.log\u001b[22m"}}
+[debug] [2022-06-05T14:45:19.394Z] Ignoring unsupported arg: auto_download {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: auto_download"}}
+[debug] [2022-06-05T14:45:19.394Z] Ignoring unsupported arg: port {"metadata":{"emulator":{"name":"ui"},"message":"Ignoring unsupported arg: port"}}
+[debug] [2022-06-05T14:45:19.394Z] Starting Emulator UI with command {"binary":"node","args":["--dns-result-order=ipv4first","C:\\Users\\HOME\\.cache\\firebase\\emulators\\ui-v1.7.0\\server.bundle.js"],"optionalArgs":[],"joinArgs":false} {"metadata":{"emulator":{"name":"ui"},"message":"Starting Emulator UI with command {\"binary\":\"node\",\"args\":[\"--dns-result-order=ipv4first\",\"C:\\\\Users\\\\HOME\\\\.cache\\\\firebase\\\\emulators\\\\ui-v1.7.0\\\\server.bundle.js\"],\"optionalArgs\":[],\"joinArgs\":false}"}}
+[info] i  ui: Emulator UI logging to ui-debug.log {"metadata":{"emulator":{"name":"ui"},"message":"Emulator UI logging to \u001b[1mui-debug.log\u001b[22m"}}
+[debug] [2022-06-05T14:45:19.620Z] Web / API server started at localhost:4000
+ {"metadata":{"emulator":{"name":"ui"},"message":"Web / API server started at localhost:4000\n"}}
+[info] i  functions: Watching "E:\ITStudy\projectManagement\bigproject\Group04-ProjectChatApp\Group04-SourceCode\chat_app_ABC\functions" for Cloud Functions... {"metadata":{"emulator":{"name":"functions"},"message":"Watching \"E:\\ITStudy\\projectManagement\\bigproject\\Group04-ProjectChatApp\\Group04-SourceCode\\chat_app_ABC\\functions\" for Cloud Functions..."}}
+[debug] [2022-06-05T14:45:19.673Z] Validating nodejs source
+[debug] [2022-06-05T14:45:22.318Z] > [functions] package.json contents: {
+  "name": "functions",
+  "description": "Cloud Functions for Firebase",
+  "scripts": {
+    "serve": "firebase emulators:start --only functions",
+    "shell": "firebase functions:shell",
+    "start": "npm run shell",
+    "deploy": "firebase deploy --only functions",
+    "logs": "firebase functions:log"
+  },
+  "engines": {
+    "node": "16"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "firebase-admin": "^10.0.2",
+    "firebase-functions": "^3.18.0"
+  },
+  "devDependencies": {
+    "firebase-functions-test": "^0.2.0"
+  },
+  "private": true
+}
+[debug] [2022-06-05T14:45:22.319Z] Building nodejs source
+[debug] [2022-06-05T14:45:22.319Z] Analyzing nodejs backend spec
+[debug] [2022-06-05T14:45:22.320Z] Could not find functions.yaml. Must use http discovery
+[debug] [2022-06-05T14:45:26.143Z] Serving at port 9005
+
+[debug] [2022-06-05T14:45:27.540Z] Got response from /__/functions.yaml {"endpoints":{},"specVersion":"v1alpha1","requiredAPIs":[]}
+[debug] [2022-06-05T14:45:27.547Z] shutdown requested via /__/quitquitquit
+
+[info] 
+┌─────────────────────────────────────────────────────────────┐
+│ ✔  All emulators ready! It is now safe to connect your app. │
+│ i  View Emulator UI at http://localhost:4000                │
+└─────────────────────────────────────────────────────────────┘
+
+┌────────────────┬────────────────┬─────────────────────────────────┐
+│ Emulator       │ Host:Port      │ View in Emulator UI             │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Authentication │ localhost:9099 │ http://localhost:4000/auth      │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Functions      │ localhost:5001 │ http://localhost:4000/functions │
+├────────────────┼────────────────┼─────────────────────────────────┤
+│ Firestore      │ localhost:8080 │ http://localhost:4000/firestore │
+└────────────────┴────────────────┴─────────────────────────────────┘
+  Emulator Hub running at localhost:4400
+  Other reserved ports: 4500
+
+Issues? Report them at https://github.com/firebase/firebase-tools/issues and attach the *-debug.log files.
+ 
+[warn] !  Error: Internal state invariant broken: no user with ID: FKmNutMF12q72kRxlMcrWkQUig9r
+    at AgentProjectState.getUserByLocalIdAssertingExists (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:208:19)
+    at AgentProjectState.validateRefreshToken (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\state.js:295:24)
+    at grantToken (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\operations.js:1212:38)
+    at Proxy.<anonymous> (C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\lib\emulator\auth\server.js:375:20)
+    at C:\Users\HOME\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\promise-breaker\index.js:265:46
+    at runMicrotasks (<anonymous>)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5) {"metadata":{"emulator":{"name":"auth"},"message":"Error: Internal state invariant broken: no user with ID: FKmNutMF12q72kRxlMcrWkQUig9r\n    at AgentProjectState.getUserByLocalIdAssertingExists (C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:208:19)\n    at AgentProjectState.validateRefreshToken (C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\state.js:295:24)\n    at grantToken (C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\operations.js:1212:38)\n    at Proxy.<anonymous> (C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\lib\\emulator\\auth\\server.js:375:20)\n    at C:\\Users\\HOME\\AppData\\Roaming\\npm\\node_modules\\firebase-tools\\node_modules\\promise-breaker\\index.js:265:46\n    at runMicrotasks (<anonymous>)\n    at processTicksAndRejections (node:internal/process/task_queues:96:5)"}}
+[debug] [2022-06-05T14:49:26.328Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast [none]
+[debug] [2022-06-05T14:49:26.328Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"eventId":"c6edd63d-12f7-478b-bafe-c6c88b7a85e2","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/group04-chat-app-407a4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-06-05T14:49:26.327Z","data":{"uid":"a455UWb44crJgXBjYBJgnFsSkqs2","email":"orange.peach.19@example.com","emailVerified":true,"displayName":"Orange Peach","photoURL":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theverge.com%2F2020%2F4%2F23%2F21233545%2Fnetflix-avatar-the-last-airbender-may-15th&psig=AOvVaw01GPyOOq5ChkyMDCnJUZCa&ust=1654526938477000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDi_KnHlvgCFQAAAAAdAAAAABAD","metadata":{"creationTime":"2022-06-05T14:49:26.326Z","lastSignInTime":"2022-06-05T14:49:26.326Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"2501472215163995614539651213109243138808","federatedId":"2501472215163995614539651213109243138808","displayName":"Orange Peach","photoUrl":"https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.theverge.com%2F2020%2F4%2F23%2F21233545%2Fnetflix-avatar-the-last-airbender-may-15th&psig=AOvVaw01GPyOOq5ChkyMDCnJUZCa&ust=1654526938477000&source=images&cd=vfe&ved=0CAwQjRxqFwoTCKDi_KnHlvgCFQAAAAAdAAAAABAD","email":"orange.peach.19@example.com","screenName":"peach_orange"}]}}
+[debug] [2022-06-05T14:49:26.338Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast 200
+[debug] [2022-06-05T14:49:26.338Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-06-05T14:49:54.190Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast [none]
+[debug] [2022-06-05T14:49:54.190Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"eventId":"d3d17bfc-a9aa-4440-8d0a-56e924ca8b8e","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/group04-chat-app-407a4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-06-05T14:49:54.190Z","data":{"uid":"DhNkym1RuksLSfnaHMPS9ETY2AFW","email":"raccoon.raccoon.981@example.com","emailVerified":true,"displayName":"Raccoon Raccoon","photoURL":"https://cdn.vox-cdn.com/thumbor/mXo5ObKpTbHYi9YslBy6YhfedT4=/95x601:1280x1460/1200x800/filters:focal(538x858:742x1062)/cdn.vox-cdn.com/uploads/chorus_image/image/66699060/mgidarccontentnick.comc008fa9d_d.0.png","metadata":{"creationTime":"2022-06-05T14:49:54.190Z","lastSignInTime":"2022-06-05T14:49:54.190Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"4011692670816412199019275226127900225660","federatedId":"4011692670816412199019275226127900225660","displayName":"Raccoon Raccoon","photoUrl":"https://cdn.vox-cdn.com/thumbor/mXo5ObKpTbHYi9YslBy6YhfedT4=/95x601:1280x1460/1200x800/filters:focal(538x858:742x1062)/cdn.vox-cdn.com/uploads/chorus_image/image/66699060/mgidarccontentnick.comc008fa9d_d.0.png","email":"raccoon.raccoon.981@example.com","screenName":"raccoon_raccoon"}]}}
+[debug] [2022-06-05T14:49:54.195Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast 200
+[debug] [2022-06-05T14:49:54.195Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-06-05T14:52:59.032Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast [none]
+[debug] [2022-06-05T14:52:59.033Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"eventId":"5fcb7950-700e-446b-933b-04a11ad4031c","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/group04-chat-app-407a4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-06-05T14:52:59.032Z","data":{"uid":"4xWcVgFYBSJl7K3kcTSYgIq7atnn","email":"grass.mountain.491@example.com","emailVerified":true,"displayName":"Grass Mountain","photoURL":"https://m.media-amazon.com/images/M/MV5BMTY2ODQ3NjMyMl5BMl5BanBnXkFtZTcwODg0MTUzNA@@._V1_.jpg","metadata":{"creationTime":"2022-06-05T14:52:59.032Z","lastSignInTime":"2022-06-05T14:52:59.032Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"5711282512005130706644300201231640106660","federatedId":"5711282512005130706644300201231640106660","displayName":"Grass Mountain","photoUrl":"https://m.media-amazon.com/images/M/MV5BMTY2ODQ3NjMyMl5BMl5BanBnXkFtZTcwODg0MTUzNA@@._V1_.jpg","email":"grass.mountain.491@example.com","screenName":"mountain_grass"}]}}
+[debug] [2022-06-05T14:52:59.036Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast 200
+[debug] [2022-06-05T14:52:59.037Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"status":"multicast_acknowledged"}
+[debug] [2022-06-05T14:57:26.525Z] >>> [apiv2][query] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast [none]
+[debug] [2022-06-05T14:57:26.525Z] >>> [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"eventId":"15490ece-3b64-47a3-8a57-f4176dc183b8","eventType":"providers/firebase.auth/eventTypes/user.create","resource":{"name":"projects/group04-chat-app-407a4","service":"firebaseauth.googleapis.com"},"params":{},"timestamp":"2022-06-05T14:57:26.525Z","data":{"uid":"RUSXmNeOUddksdZ1QckenJumQ9yt","email":"chicken.orange.345@example.com","emailVerified":true,"displayName":"Chicken Orange","metadata":{"creationTime":"2022-06-05T14:57:26.524Z","lastSignInTime":"2022-06-05T14:57:26.524Z"},"customClaims":{},"providerData":[{"providerId":"google.com","rawId":"3695145060890668507799093942069901999757","federatedId":"3695145060890668507799093942069901999757","displayName":"Chicken Orange","email":"chicken.orange.345@example.com","screenName":"orange_chicken"}]}}
+[debug] [2022-06-05T14:57:26.528Z] <<< [apiv2][status] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast 200
+[debug] [2022-06-05T14:57:26.528Z] <<< [apiv2][body] POST http://localhost:5001/functions/projects/group04-chat-app-407a4/trigger_multicast {"status":"multicast_acknowledged"}
