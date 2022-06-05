@@ -57,6 +57,7 @@ const FormStyled = styled(Form)`
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-top: 10px;
 	padding: 2px 2px 2px 2px;
 	border: 2px solid black;
 	border-radius: 10px;
@@ -163,9 +164,7 @@ export default function ChatWindow() {
 						</ButtonGroupStyled>
 					</HeaderStyled>
 					<ContentStyled>
-						<MessageListStyled
-							style={{ paddingBottom: 10 }}
-							ref={messageListRef}>
+						<MessageListStyled ref={messageListRef}>
 							{messages.map((mes) => (
 								<Message
 									key={mes.id}

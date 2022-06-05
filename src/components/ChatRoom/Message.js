@@ -28,6 +28,7 @@ const WrapperStyled = styled.div`
 		background: rgb(245, 241, 241);
 		color: black;
 		border-radius: 10px;
+		margin-bottom: 5px;
 		font-size: 15px;
 		padding: 10px;
 		display: inline-block;
@@ -35,7 +36,10 @@ const WrapperStyled = styled.div`
 	}
 
 	.message.own {
-		margin-right: 15px;
+		display: flex;
+		flex-direction: column;
+		margin-bottom: 0px;
+		margin-right: 10px;
 		align-items: flex-end;
 	}
 
@@ -45,6 +49,7 @@ const WrapperStyled = styled.div`
 		border-radius: 10px;
 		font-size: 15px;
 		padding: 10px;
+		margin-bottom: 10px;
 		display: inline-block;
 		max-width: 351px;
 	}
