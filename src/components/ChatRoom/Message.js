@@ -32,7 +32,7 @@ const WrapperStyled = styled.div`
 		font-size: 15px;
 		padding: 10px;
 		display: inline-block;
-		max-width: 351px;
+		max-width: 275px;
 	}
 
 	.message.own {
@@ -51,7 +51,7 @@ const WrapperStyled = styled.div`
 		padding: 10px;
 		margin-bottom: 10px;
 		display: inline-block;
-		max-width: 351px;
+		max-width: 275px;
 	}
 `;
 

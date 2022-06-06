@@ -178,10 +178,12 @@ export default function ChatWindow() {
 						</MessageListStyled>
 						<FormStyled form={form}>
 							<Form.Item name='message'>
-								<Input
+								<Input.TextArea
+									onPressEnter={handleOnSubmit}
+									autoSize={{ minRows: 1, maxRows: 3 }}
 									ref={inputRef}
 									onChange={handleInputChange}
-									onPressEnter={handleOnSubmit}
+									allowClear={true}
 									placeholder='Enter message...'
 									bordered={false}
 									autoComplete='off'
